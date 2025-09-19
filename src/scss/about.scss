@@ -1,0 +1,53 @@
+.about {
+  padding: 71px 0;
+  background-color: $_about-bg-color;
+}
+
+.about-vrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+
+.about-card {
+  width: 370px;
+  margin: 0 -15px;
+}
+
+.about-title {
+  text-align: center;
+  color: $_about-title;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 29px;
+  text-transform: uppercase;
+}
+
+#about-title-share {
+  margin-bottom: 49px;
+}
+
+.about-text p,
+.about-text span {
+  color: $_about-text;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.about-text span {
+  display: block;
+  text-align: center;
+}
+
+.about-icons {
+  display: flex;
+  justify-content: center;
+}
+
+#about-media-icons-list {
+  width: 170px;
+  justify-content: space-between;
+}

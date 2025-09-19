@@ -1,0 +1,21 @@
+.footer {
+  padding: 23.86px 0 24.14px;
+  background-color: $_footer-bg-color;
+}
+
+.footer-text {
+  width: 370px;
+  margin: auto;
+}
+
+.footer-text p {
+  color: $_span-first-part;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.footer-text span {
+  color: $_span-second-part;
+}
