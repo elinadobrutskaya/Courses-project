@@ -1,148 +1,140 @@
-.scroll {
-  background-color: #fff;
-}
-
-.scroll-container {
-  margin-bottom: 31px;
-  position: relative;
-}
-
-.scroll-container-buttons-vrap {
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
+.slick-track {
   display: flex;
-  justify-content: space-between;
-  transform: translateY(-50%);
-  padding: 0 20px;
+  min-width: 0;
 }
 
-.scroll-container-button-left,
-.scroll-container-button-right {
-  width: 50px;
-  height: 50px;
-  border: none;
-  background: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.scroll-container-button-left::before {
-  content: '';
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-top: 4px solid rgba($color: #fff, $alpha: 0.5);
-  border-right: 4px solid rgba($color: #fff, $alpha: 0.5);
-  transform: rotate(-135deg);
-}
-
-.scroll-container-button-right::before {
-  content: '';
-  display: inline-block;
-  width: 15px;
-  height: 15px;
-  border-top: 4px solid rgba($color: #fff, $alpha: 0.5);
-  border-right: 4px solid rgba($color: #fff, $alpha: 0.5);
-  transform: rotate(45deg);
-}
-
-.scroll-container-button-left:hover,
-.scroll-container-button-right:hover {
-  transform: scale(1.1);
-}
-
-.scroll-container-content-active {
-  display: flex;
-  align-items: center;
+.slick-slide:nth-child(even) {
   background-color: $_scroll-bck-fst;
 }
 
-.scroll-container-content:nth-child(odd) {
-  background-color: $_scroll-bck-fst;
-}
-
-.scroll-container-content {
-  display: none;
-  align-items: center;
-}
-
-.scroll-container-content:nth-child(even) {
+.slick-slide:nth-child(odd) {
   background-color: $_scroll-bck-scn;
 }
 
-.scroll-img {
-  width: 50%;
-  height: auto;
-  overflow: hidden;
-}
-
-.scroll-img img {
+.slider {
   width: 100%;
-  height: 490px;
-  object-fit: cover;
-  display: block;
+  background-color: #fff;
+
+  .slider__item {
+    display: flex !important;
+    align-items: center;
+    min-width: 0;
+    position: relative;
+
+    .slider-img {
+      width: 50%;
+      height: auto;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 490px;
+        object-fit: cover;
+        display: block;
+      }
+    }
+
+    .slider-description {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      .slider-description-text {
+        width: 471px;
+        margin: auto;
+        margin-bottom: 10px;
+
+        p {
+          font-family: 'Cardo', sans-serif;
+          font-weight: 400;
+          font-style: italic;
+          font-size: 36px;
+          text-transform: capitalize;
+          color: #fff;
+        }
+      }
+
+      .slider-description-author {
+        width: 471px;
+        margin: auto;
+
+        span {
+          color: #fff;
+          font-weight: 700;
+          font-size: 13px;
+          text-transform: uppercase;
+        }
+      }
+    }
+  }
 }
 
-.scroll-description {
-  width: 50%;
-  flex-direction: column;
-  justify-content: center;
+.slick-prev,
+.slick-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  width: 50px;
+  height: 50px;
+  z-index: 10;
+  transition: 0.3s ease;
+  cursor: pointer;
+
+  &:before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-top: 4px solid rgba($color: #fff, $alpha: 0.7);
+    border-right: 4px solid rgba($color: #fff, $alpha: 0.7);
+  }
+
+  &.slick-prev {
+    left: 20px;
+    &:before {
+      transform: rotate(-135deg);
+    }
+  }
+
+  &.slick-next {
+    right: 20px;
+    &:before {
+      transform: rotate(45deg);
+    }
+  }
+
+  &:hover {
+    transform: translateY(-50%) scale(1.1);
+  }
 }
 
-.scroll-description-text {
-  width: 471px;
-  margin: auto;
-  margin-bottom: 10px;
-}
-
-.scroll-description-text p {
-  font-family: 'Cardo', sans-serif;
-  font-weight: 400;
-  font-style: italic;
-  font-size: 36px;
-  text-transform: capitalize;
-  color: #fff;
-}
-
-.scroll-description-author {
-  width: 471px;
-  margin: auto;
-}
-
-.scroll-description-author span {
-  color: #fff;
-  font-weight: 700;
-  font-size: 13px;
-  text-transform: uppercase;
-}
-
-.scroll-tabs {
+.slick-dots {
   width: 170px;
   margin: auto;
+  margin-top: 30px;
   display: flex;
   justify-content: space-between;
-}
 
-.scroll-tab {
-  display: block;
-  width: 14px;
-  height: 14px;
-  background-color: #fff;
-  border: 1px solid $_tabs-border;
-  border-radius: 50%;
-  cursor: pointer;
-  transition: 0.3s ease;
-}
+  li button {
+    font-size: 0;
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border: 1px solid $_tabs-border;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.3s ease;
 
-.scroll-tab:hover {
-  background-color: $_tabs-border;
-}
+    &:hover {
+      background-color: $_tabs-border-hover;
+    }
+  }
 
-.scroll-tab:active {
-  background-color: $_tabs-border;
+  li.slick-active button {
+    background-color: $_tabs-border;
+  }
 }

@@ -14,6 +14,10 @@ $_scroll-bck-fst: #5c3249;
 $_scroll-bck-scn: #19133e;
 
 $_tabs-border: #7e5d6f;
+$_tabs-border-hover: rgba(
+  $color: #7e5d6f,
+  $alpha: 0.7,
+);
 
 $_about-bg-color: #353c65;
 $_about-title: #fff;
