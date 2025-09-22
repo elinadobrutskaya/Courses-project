@@ -1,0 +1,114 @@
+.gallery {
+  background-color: #fff;
+}
+
+.gallery-cards-vrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-card {
+  width: 25%;
+  border: 2px solid #fff;
+  position: relative;
+  z-index: 1;
+}
+
+.gallery-card-background {
+  padding: 110px 0 110px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: 0.3s;
+}
+
+.gallery-card-background:hover {
+  .gallery-card-info {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.gallery-card-background:active {
+  .gallery-card-info {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.gallery-card-background::after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: #ff4343;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.5s ease;
+}
+.gallery-card-background:hover::after {
+  opacity: 0.8;
+}
+
+.gallery-card-background:active::after {
+  background-color: #b90c0c;
+  opacity: 0.8;
+}
+
+.first-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-arnie-watkins-1337313-3156381.jpg);
+}
+
+.second-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-azamat-hatypov-97167739-26711212.jpg);
+}
+
+.third-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-gustavo-cruz-744734-1592119.jpg);
+}
+
+.fourth-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-mirco-violent-blur-1271756-4072840.jpg);
+}
+
+.fifth-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-olenkabohovyk-5345029.jpg);
+}
+
+.sixth-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-tobiasbjorkli-1559821.jpg);
+}
+
+.seventh-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-tobiasbjorkli-1559825.jpg);
+}
+
+.eighth-gallery-card {
+  background-image: url(../img/gallery-pictures/pexels-trvlust-5409751.jpg);
+}
+
+.gallery-card-info {
+  opacity: 0;
+  visibility: hidden;
+  position: relative;
+  z-index: 3;
+  transition: opacity 0.5s ease;
+}
+
+.gallery-card-title {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.gallery-card-text {
+  text-align: center;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
