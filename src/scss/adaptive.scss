@@ -1,0 +1,172 @@
+@media (max-width: 1024px) {
+  .header-navigation-list-item a {
+    font-size: 12px;
+  }
+
+  .first-screen {
+    padding: 270px 0 126px;
+  }
+  .first-screen-title {
+    width: 984px;
+    font-size: 48px;
+    margin-bottom: 62px;
+  }
+  .first-screen-text {
+    width: 750px;
+    margin-bottom: 89px;
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .main-button {
+    a {
+      width: 314px;
+      margin: auto;
+    }
+  }
+
+  .features-cards-vrap {
+    grid-template-columns: 315px 315px 315px;
+    grid-column-gap: 20px;
+    grid-row-gap: 50px;
+  }
+
+  .features-card-icon {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 24px;
+  }
+  .card-title {
+    font-size: 18px;
+  }
+  .card-text p {
+    font-size: 14px;
+  }
+
+  .gallery-card-background {
+    padding: 75px 0 87px;
+  }
+
+  .gallery-card-title {
+    font-size: 18px;
+    margin-bottom: 17px;
+  }
+
+  .gallery-card-text p {
+    font-size: 14px;
+  }
+
+  .customers-card {
+    width: 227px;
+    margin-right: 10px;
+  }
+
+  .customers-card-img {
+    width: 227px;
+    height: 227px;
+  }
+
+  .customers-card-name {
+    font-size: 18px;
+  }
+
+  .customers-card-post {
+    font-size: 14px;
+    margin-bottom: 22px;
+  }
+
+  .customers-card-text {
+    margin-bottom: 39px;
+    p {
+      font-size: 14px;
+    }
+  }
+
+  .media-icon {
+    width: 32px;
+    margin-right: 5px;
+
+    a {
+      width: 32px;
+      line-height: 32px;
+      font-size: 15px;
+    }
+  }
+
+  .slider .slider__item .slider-description .slider-description-text {
+    width: 330px;
+    p {
+      font-size: 24px;
+    }
+  }
+
+  .slider .slider__item .slider-description .slider-description-author {
+    width: 330px;
+    span {
+      font-size: 12px;
+    }
+  }
+
+  .slick-dots {
+    li button {
+      width: 10px;
+      height: 10px;
+    }
+  }
+
+  .download {
+    padding: 77px 0;
+  }
+
+  .download-title {
+    width: 984px;
+    font-size: 24px;
+  }
+
+  .download-text {
+    width: 984px;
+    font-size: 14px;
+  }
+  #download-button a {
+    width: 314px;
+    margin: auto;
+    font-size: 18px;
+  }
+
+  .about {
+    padding: 46px 0 41px;
+  }
+
+  .about-card {
+    width: 315px;
+  }
+
+  .about-title {
+    font-size: 14px;
+    margin-bottom: 17px;
+  }
+
+  #about-title-share {
+    margin-bottom: 32px;
+  }
+
+  .about-text p,
+  .about-text span {
+    font-size: 14px;
+  }
+
+  #about-media-icons-list {
+    width: 144px;
+  }
+
+  .footer {
+    padding: 14px 0;
+  }
+  .footer-text {
+    width: 314px;
+    p {
+      font-size: 14px;
+    }
+  }
+}
