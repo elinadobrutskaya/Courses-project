@@ -20,6 +20,7 @@
 
 .customers-card:last-child {
   margin-right: 0px;
+  margin-bottom: 30px;
 }
 
 .customers-card-img {
@@ -29,7 +30,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 30px;
 
   img {
     max-width: 100%;

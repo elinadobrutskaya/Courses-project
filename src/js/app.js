@@ -12,3 +12,11 @@ $(document).ready(function () {
     nextArrow: '<button type="button" class="slick-next"></button>',
   })
 })
+
+const burgerBtn = document.querySelector('.header-burger-button button')
+const nav = document.querySelector('.header-navigation')
+
+burgerBtn.addEventListener('click', () => {
+  burgerBtn.classList.toggle('active')
+  nav.classList.toggle('active')
+})
