@@ -11,6 +11,7 @@
 @import '../scss/download.scss';
 @import '../scss/about.scss';
 @import '../scss/footer.scss';
+@import '../scss/adaptive.scss';
 
 * {
   margin: 0;
@@ -47,8 +48,8 @@ html {
   align-items: center;
   width: 39px;
   line-height: 39px;
-  border: 1.5px solid #c6cbcd;
-  color: #c6cbcd;
+  border: 1.5px solid $_icons-border;
+  color: $_icons-border;
   font-size: 18px;
   transition: 0.4s ease;
 }
@@ -58,18 +59,18 @@ html {
 }
 
 .fa-facebook-f:hover {
-  border: 1.5px solid #4267b2;
-  color: #4267b2;
+  border: 1.5px solid $_icon-facebook;
+  color: $_icon-facebook;
 }
 
 .fa-twitter:hover {
-  border: 1.5px solid #1da1f2;
-  color: #1da1f2;
+  border: 1.5px solid $_icon-twitter;
+  color: $_icon-twitter;
 }
 
 .fa-linkedin:hover {
-  border: 1.5px solid #0077b5;
-  color: #0077b5;
+  border: 1.5px solid $_icon-linkedin;
+  color: $_icon-linkedin;
 }
 
 .media-icon:last-child {
@@ -89,7 +90,7 @@ html {
   line-height: 80px;
   font-size: 24px;
   font-weight: 900;
-  color: #fff;
+  color: $_main-text;
   background-color: $_button;
   transition: 0.5s ease;
 }
@@ -100,7 +101,5 @@ html {
 
 .main-button a:active {
   background-color: $_button;
-  box-shadow: 0px 0px 30px rgba($color: #ff4343, $alpha: 1);
+  box-shadow: 0px 0px 30px rgba($color: $_button, $alpha: 1);
 }
-
-@import '../scss/adaptive.scss';

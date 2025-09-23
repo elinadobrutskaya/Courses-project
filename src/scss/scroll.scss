@@ -13,7 +13,7 @@
 
 .slider {
   width: 100%;
-  background-color: #fff;
+  background-color: $_main-bg-color;
 
   .slider__item {
     display: flex !important;
@@ -39,8 +39,6 @@
       display: flex;
       flex-direction: column;
       justify-content: center;
-      // padding: 96px 0 136px;
-      // align-items: center;
 
       .slider-description-text {
         width: 471px;
@@ -53,7 +51,7 @@
           font-style: italic;
           font-size: 36px;
           text-transform: capitalize;
-          color: #fff;
+          color: $_main-text;
         }
       }
 
@@ -62,7 +60,7 @@
         margin: auto;
 
         span {
-          color: #fff;
+          color: $_main-text;
           font-weight: 700;
           font-size: 13px;
           text-transform: uppercase;

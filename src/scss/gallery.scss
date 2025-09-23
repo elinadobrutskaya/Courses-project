@@ -1,5 +1,5 @@
 .gallery {
-  background-color: #fff;
+  background-color: $_main-bg-color;
 }
 
 .gallery-cards-vrap {
@@ -10,7 +10,7 @@
 
 .gallery-card {
   width: 25%;
-  border: 2px solid #fff;
+  border: 2px solid $_main-bg-color;
   position: relative;
   z-index: 1;
 }
@@ -43,7 +43,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  background-color: #ff4343;
+  background-color: $_gallery-hover;
   opacity: 0;
   z-index: 2;
   transition: opacity 0.5s ease;
@@ -53,7 +53,7 @@
 }
 
 .gallery-card-background:active::after {
-  background-color: #b90c0c;
+  background-color: $_gallery-active;
   opacity: 0.8;
 }
 
@@ -99,7 +99,7 @@
 
 .gallery-card-title {
   text-align: center;
-  color: #fff;
+  color: $_main-text;
   text-transform: uppercase;
   font-weight: 900;
   font-size: 24px;
@@ -108,7 +108,7 @@
 
 .gallery-card-text p {
   text-align: center;
-  color: #fff;
+  color: $_main-text;
   font-weight: 400;
   font-size: 18px;
 }
