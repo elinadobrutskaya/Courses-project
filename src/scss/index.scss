@@ -1,0 +1,105 @@
+@import '../scss/_cdn.scss';
+@import '../scss/_variables.scss';
+@import '../scss/_mixins.scss';
+@import '../scss/header.scss';
+@import '../scss/firstscreen.scss';
+@import '../scss/features.scss';
+@import '../scss/gallery.scss';
+@import '../scss/customers.scss';
+@import '../scss/scroll.scss';
+@import '~slick-carousel/slick/slick.scss';
+@import '../scss/download.scss';
+@import '../scss/about.scss';
+@import '../scss/footer.scss';
+@import '../scss/adaptive.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+  position: relative;
+  z-index: 3;
+}
+
+.media-icons-list {
+  display: flex;
+}
+
+.media-icon {
+  width: 39px;
+  margin-right: 6px;
+}
+
+.media-icon a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 39px;
+  line-height: 39px;
+  border: 1.5px solid $_icons-border;
+  color: $_icons-border;
+  font-size: 18px;
+  transition: 0.4s ease;
+}
+
+.media-icon a:hover {
+  transform: scale(1.08);
+}
+
+.fa-facebook-f:hover {
+  border: 1.5px solid $_icon-facebook;
+  color: $_icon-facebook;
+}
+
+.fa-twitter:hover {
+  border: 1.5px solid $_icon-twitter;
+  color: $_icon-twitter;
+}
+
+.fa-linkedin:hover {
+  border: 1.5px solid $_icon-linkedin;
+  color: $_icon-linkedin;
+}
+
+.media-icon:last-child {
+  margin-right: 0px;
+}
+
+.main-button {
+  width: 370px;
+  margin: auto;
+}
+
+.main-button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  line-height: 80px;
+  font-size: 24px;
+  font-weight: 900;
+  color: $_main-text;
+  background-color: $_button;
+  transition: 0.5s ease;
+}
+
+.main-button a:hover {
+  background-color: $_button-hover;
+}
+
+.main-button a:active {
+  background-color: $_button;
+  box-shadow: 0px 0px 30px rgba($color: $_button, $alpha: 1);
+}

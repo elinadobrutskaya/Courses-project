@@ -1,0 +1,32 @@
+{
+  "name": "courses-project",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elinadobrutskaya/Courses-project.git"
+  },
+  "author": "Dobrutskaya Elina",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elinadobrutskaya/Courses-project/issues"
+  },
+  "homepage": "https://github.com/elinadobrutskaya/Courses-project#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.15.4",
+    "concat": "^1.0.3",
+    "http-server": "^14.1.1",
+    "parcel": "^2.15.4",
+    "sass": "^1.92.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "jquery": "^3.7.1",
+    "slick-carousel": "^1.8.1"
+  }
+}

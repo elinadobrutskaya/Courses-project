@@ -1,0 +1,125 @@
+.header {
+  background-color: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+.header-vrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #fff;
+  padding: 38px 0 32px;
+}
+
+.header-logo {
+  margin: 0 15px;
+
+  .header-logo_first-part {
+    font-size: 26px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $_logo-firstpart;
+  }
+
+  .header-logo_second-part {
+    font-size: 26px;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: $_logo-secondpart;
+  }
+}
+
+.header-navigation-list {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.header-navigation-list-item {
+  width: 134px;
+  margin: auto;
+  text-align: center;
+  transition: 0.3s ease;
+}
+
+.header-navigation-list-item a {
+  position: relative;
+  width: 134px;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $_main-text;
+  display: inline-block;
+  transition: 0.3s ease;
+}
+
+.header-navigation-list-item a::after {
+  content: '';
+  position: absolute;
+  bottom: -38px;
+  left: 50%;
+  width: 100%;
+  height: 2px;
+  background-color: $_header-line;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: 0.3s ease;
+}
+
+.header-navigation-list-item a:hover::after {
+  transform: translateX(-50%) scaleX(1);
+}
+
+.header-navigation-list-item a:active {
+  color: $_button-hover;
+}
+
+.header-navigation-list-item a:active::after {
+  transform: translateX(-50%) scaleX(1);
+  background-color: $_button-hover;
+}
+
+.header-burger-button {
+  display: none;
+}
+
+.header-burger-button button {
+  width: 30px;
+  height: 20px;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.header-burger-button button::before,
+.header-burger-button button::after,
+.header-burger-button button span {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 3px;
+  background-color: $_main-text;
+  border-radius: 2px;
+  position: absolute;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+.header-burger-button button::before {
+  top: 0;
+}
+
+.header-burger-button button span {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-burger-button button::after {
+  bottom: 0;
+}
