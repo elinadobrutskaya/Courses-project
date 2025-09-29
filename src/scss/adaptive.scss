@@ -248,14 +248,13 @@
     opacity: 0;
   }
 
-  /* фиксируем шапку сверху */
   .header {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 300; /* выше меню */
-    background: transparent; /* прозрачный, чтобы фон меню просвечивал */
+    z-index: 300;
+    background: transparent;
   }
 
   .header-logo {
@@ -282,11 +281,11 @@
   }
 
   .main-button {
-    width: 280px;
+    width: 280px !important;
     margin: auto;
 
     a {
-      width: 280px;
+      width: 280px !important;
       line-height: 60px;
       font-size: 24px;
     }
